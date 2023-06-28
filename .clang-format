@@ -1,0 +1,5 @@
+BasedOnStyle: Google
+QualifierAlignment: Right
+ColumnLimit: 100
+BreakStringLiterals: true
+AllowShortFunctionsOnASingleLine: Inline
