@@ -16,7 +16,8 @@ class MyEventHandler : public QObject {
   void executeConditionally(QString const &s,
                             std::function<std::string const &(MyStruct const &)> callback);
 #else
-  void executeConditionally(QString const &s, std::function<std::string const &(MyStruct &)> callback);
+  void executeConditionally(QString const &s,
+                            std::function<std::string const &(MyStruct &)> callback);
 #endif
 
  private:

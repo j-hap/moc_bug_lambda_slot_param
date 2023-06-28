@@ -15,7 +15,7 @@ class MyWidget : public QWidget {
 #ifdef ENABLE_BUG
   void propertyChanged(QString const& newValue, std::function<std::string const&(MyStruct const&)>);
 #else
-  void propertyChanged(QString const& newValue, std::function<std::string const&(MyStruct &)>);
+  void propertyChanged(QString const& newValue, std::function<std::string const&(MyStruct&)>);
 #endif
 
  private:
